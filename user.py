@@ -4,7 +4,7 @@ class user:
     """
     class that generates new instances of users
     """
-    users_lists=[]
+    users_list=[]
 
     def _init_(self,first_name,last_name,user_name,password):
         """

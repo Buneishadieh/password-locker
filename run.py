@@ -5,7 +5,7 @@ from random import *
 
 
 def create_user(first_name,last_name,user_name,user_password):
-    new_user = user(first_name,last_name,user_name,user_password)
+    new_user = user (first_name,last_name,user_name,user_password)
     return new_user
 
 
@@ -53,16 +53,8 @@ def main():
             print("Set your Username ..")
             user_name=input()
 
-            print("Sety your password")
+            print("Set your password")
             user_password=input()
-
-            save_user(create_user(first_name,last_name,user_name,user_password))
-
-            print("Thank for registering  an account with us .Here are your details :")
-            print("-"*10)
-            print(f"Name:{first_name} {last_name} \nUsername: {user_name} \nPassword: {user_passwod}")
-            print("\nNow you can LogIn using these details ")
-
         
         elif option == "LogIn":
             print("Enter Username .. ")
@@ -127,7 +119,9 @@ def main():
                 print("\n")
 
 if __name__ == '__main__':
-    main()
+     
+     
+     main()
                      
 
                 
