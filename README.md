@@ -1,10 +1,11 @@
 # password-locker
 
-This python shell application was created in order to allow a user to store/generate passwords for his/her various accounts.Developed during Moringa Core. 
-By: Bunei Shadrack
+## Project Author
+Bunei Shadrack 
 
-## Description
-This shell application allows a user to create an account whereby he can store his/her passwords just incase their ever forget about them.
+### Project Description
+
+Password Locker is a python application that helps users generate and store passwords for their accounts such as facebook, twitter, gmail etc The password locker runs on the terminal and uses short codes to navigate through it.
 
 ## Setup/Installation Requirements
 * Git clone the project from github
@@ -18,9 +19,9 @@ All credentials are shown instead of exclusive.
 
 
 ### Technologies Used
-* visual studio was the source code editor of choice.
-* Git and Github were used as my local and online repositories respectively.
-* Python Shell Terminal was used for launching the application.
+* visual studio is the source code editor of choice.
+* Git and Github is used as my local and online repositories respectively.
+* Python Shell Terminal is used for launching the application.
 
 
 ### Support and contact details
