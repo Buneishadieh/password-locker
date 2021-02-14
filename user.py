@@ -1,6 +1,6 @@
 import random
 import string
-class user:
+class User:
     """
     class that generates new instances of users
     """
@@ -25,14 +25,14 @@ class user:
         """
         save_user method user objects into user userslist
         """
-        user.users_list.append(self)
+        User.users_list.append(self)
     
 
     def delete_user(self):
         """
         delete_user method deletes a saved user from the users_list
         """
-        user.users_list.remove(self)
+        User.users_list.remove(self)
 
     @classmethod
     def display_users(cls):
@@ -50,7 +50,8 @@ class user:
         """
         for user in cls.users_list:
             if user.password==number:
-                return user
+                return User
+
     @classmethod
     def user_exist(cls,number):
         for user in cls.users_list:
@@ -59,7 +60,7 @@ class user:
                 return False
 
 
-class  credentials:
+class  Credentials:
     """
     class that generates new instances of credentials
     """
@@ -79,14 +80,14 @@ class  credentials:
          """
         save_account method saves user objects into  accounts
         """
-         credentials.accounts.append(self)
+         Credentials.accounts.append(self)
        
     
     def delete_account(self):
         """
         delete_account method deletes a saved Credential from accounts
         """
-        credentials.accounts.remove(self)
+        Credentials.accounts.remove(self)
 
 
 
