@@ -1,11 +1,12 @@
 import string
-from user import user
-from user import credentials
 from random import *
+from user import User
+from user import Credentials
+
 
 
 def create_user(first_name,last_name,user_name,user_password):
-    new_user = user(first_name,last_name,user_name,user_password)
+    new_user = User (first_name,last_name,user_name,user_password)
     return new_user
 
 
@@ -13,25 +14,31 @@ def save_user(user):
     user.save_user()
 
 
-def  delete_user(user):
+def  delete_user(User):
     user.delete_user()
 
 def find_user(number):
-    return user.find_by_number(number)
+    return User.find_by_number(number)
 
-def display_user():
-    return user.display_users()
+def display_users():
+    return User.display_users()
 
 def create_accout(account_user_name,account_name,account_password):
-    new_account=credentials(account_user_name,account_name,account_password)
+    new_account= Credentials(account_user_name,account_name,account_password)
     return new_account
 
 def save_account(user):
     user.save_account()
 
+def delete_account(user):
+    user.delete_account()
+
+def find_account(number):
+    return Credentials.find_by_number(number)
+
 
 def display_accounts():
-    return credentials.display_accounts()
+    return Credentials.display_accounts()
 
 
 def main():
@@ -53,16 +60,19 @@ def main():
             print("Set your Username ..")
             user_name=input()
 
-            print("Sety your password")
+            print("Set your password")
             user_password=input()
 
-            save_user(create_user(first_name,last_name,user_name,user_password))
+            # create_user(first_name,last_name,user_name,user_password)
 
-            print("Thank for registering  an account with us .Here are your details :")
+            # save_user();
+            
+
+            print("Thank you for registering an account with us.Here are your details:")
             print("-"*10)
-            print(f"Name:{first_name} {last_name} \nUsername: {user_name} \nPassword: {user_passwod}")
-            print("\nNow you can LogIn using these details ")
-
+            print(f"Name: {first_name} {last_name} \nUsername: {user_name} \nPassword: {user_password}")
+            print("\nNow you can LogIn using these details")
+            print("\n \n")
         
         elif option == "LogIn":
             print("Enter Username .. ")
@@ -82,7 +92,7 @@ def main():
                 print("\n")
 
                 if choose=="Add_account":
-                    print("Add credentials account")
+                    print("Add Credentials account")
                     print("-"*25)
                     account_user_name=login_user_name
                     print("Account Name")
@@ -127,7 +137,9 @@ def main():
                 print("\n")
 
 if __name__ == '__main__':
-    main()
+     
+     
+     main()
                      
 
                 
